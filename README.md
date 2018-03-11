@@ -1,2 +1,2 @@
 # go
-Repo for go code...
+Repo for go code.
