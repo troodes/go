@@ -17,7 +17,7 @@ func main() {
 	fmt.Println("Starting the application...")
 
 	// Read config.json input file.
-	var myConfig = utils.LoadConfiguration("./hello/config.json")
+	var myConfig = utils.LoadConfiguration("./conf/config.json")
 	var ticker string = "DIS"
 	var data string
 
@@ -41,10 +41,10 @@ func main() {
 	data = getDataFromUrl(url)
 	fmt.Println(data)
 	
-	url = "https://www.worldtradingdata.com/api/v1/history?api_token=" + myConfig.WtdKey + "&symbol=" + ticker
-	fmt.Println(url)
-	data = getDataFromUrl(url)
-	fmt.Println(data)
+	//url = "https://www.worldtradingdata.com/api/v1/history?api_token=" + myConfig.WtdKey + "&symbol=" + ticker
+	//fmt.Println(url)
+	//data = getDataFromUrl(url)
+	//fmt.Println(data)
 	
 
 	fmt.Println("Terminating the application...")

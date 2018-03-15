@@ -16,11 +16,10 @@ func LoadConfiguration(file string) Config {
     var config Config
     configFile, err := os.Open(file)
    
-    // fmt.Println(os.Getwd())
-    
     defer configFile.Close()
     if err != nil {
         fmt.Println(err.Error())
+        os.Exit(1)
     }
     jsonParser := json.NewDecoder(configFile)
     jsonParser.Decode(&config)
