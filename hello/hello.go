@@ -17,7 +17,7 @@ func main() {
 	fmt.Println("Starting the application...")
 
 	// Read config.json input file.
-	var myConfig = utils.LoadConfiguration("./hello/config.json")
+	var myConfig = utils.LoadConfiguration("./conf/config.json")
 	var ticker string = "DIS"
 	var data string
 
