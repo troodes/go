@@ -41,10 +41,10 @@ func main() {
 	data = getDataFromUrl(url)
 	fmt.Println(data)
 	
-	url = "https://www.worldtradingdata.com/api/v1/history?api_token=" + myConfig.WtdKey + "&symbol=" + ticker
-	fmt.Println(url)
-	data = getDataFromUrl(url)
-	fmt.Println(data)
+	//url = "https://www.worldtradingdata.com/api/v1/history?api_token=" + myConfig.WtdKey + "&symbol=" + ticker
+	//fmt.Println(url)
+	//data = getDataFromUrl(url)
+	//fmt.Println(data)
 	
 
 	fmt.Println("Terminating the application...")
