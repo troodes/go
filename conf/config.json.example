@@ -1,5 +1,5 @@
 A file containing this Json structure should be placed in:  ./conf/config.json
-relative to the Go executable.
+relative to the where you're running the Go executable from.
 
 {
   "avKey":"put your AlphaVantage Key Here.",
