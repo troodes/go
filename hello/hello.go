@@ -10,14 +10,21 @@ import (
 	"github.com/troodes/sandbox/utils"
 	"io/ioutil"
 	"net/http"
+	"log"
+	"os"
 )
 
 func main() {
 
 	fmt.Println("Starting the application...")
 
+	dir, err := os.Getwd()
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	// Read config.json input file.
-	var myConfig = utils.LoadConfiguration("./conf/config.json")
+	var myConfig = utils.LoadConfiguration(dir + "/conf/config.json")
 	var ticker string = "DIS"
 	var data string
 
