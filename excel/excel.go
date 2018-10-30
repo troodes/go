@@ -1,5 +1,7 @@
 package main
 
+// Example of go reading and excel file
+
 import (
     "fmt"
 
