@@ -1,4 +1,10 @@
 
+
+Converting Json to a Go DataStruct:
+###################################
+https://mholt.github.io/json-to-go/
+
+
 REST Post Example:
 ##################
     jsonData := map[string]string{"firstname": "Nic", "lastname": "Raboy"}
